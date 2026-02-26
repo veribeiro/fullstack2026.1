@@ -1,5 +1,5 @@
 p{
-    color: red;
+    
     font-size: 18pt;
 }
 
@@ -12,5 +12,9 @@ p{
 }
 
 a:hover{
+    color: yellow;
+}
+
+.teste{
     color: yellow;
 }
