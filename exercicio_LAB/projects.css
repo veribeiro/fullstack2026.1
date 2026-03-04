@@ -1,0 +1,24 @@
+body{
+    margin: 30px;
+}
+
+.menu{
+    background-color: rgb(48, 48, 100);
+    color: #ddd;
+    padding: 10px 60px;
+
+    a{
+        color: antiquewhite;
+    }
+}
+
+.titulo-menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+a:hover{
+    color: rgb(244, 194, 16);
+}
