@@ -1,0 +1,69 @@
+body{
+    margin: 30px;
+}
+
+.menu{
+    background-color: rgb(48, 48, 100);
+    color: #ddd;
+    padding: 10px 60px;
+
+    a{
+        color: antiquewhite;
+    }
+}
+
+.titulo-menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.table-container{
+table{
+    border-collapse: collapse;
+}
+
+th{
+    width: 680px;
+    border: 2px solid #ddd;
+}
+
+table:hover{
+    background-color: rgb(216, 216, 216);
+}
+}
+
+th{
+    width: 680px;
+}
+
+.resumo-livro{
+    font-size: 14px;
+    font-weight: normal;
+    text-align:justify;
+    margin: 15px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    background-color: rgb(48, 48, 100);
+    color: azure;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+}
+
+a:hover{
+    color: rgb(244, 194, 16);
+}
+
+#titulo-principal{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.links{
+    text-align: left;
+}
