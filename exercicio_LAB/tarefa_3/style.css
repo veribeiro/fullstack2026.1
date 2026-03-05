@@ -1,0 +1,141 @@
+body{
+    margin:5px;
+    background-color: lightgray;
+}
+
+
+nav{
+    background-color: blanchedalmond;
+    display: flex;
+    padding: 50px;
+    border: rgb(53, 62, 136) solid 2px;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+h1{
+        color: darkgreen;
+        display: flex;
+        gap: 100px;
+        font-size: 50px;
+    }
+
+.maior-texto-principal{
+    font-size: 20pt;
+    margin-top: 50px;
+}
+
+h3{
+    justify-content: center;
+        text-align: center;
+        align-items: center;
+}
+
+.links-nav{
+        background-color: lightskyblue;
+        padding: 10px;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+
+.introduction{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: indigo;
+}
+
+.livros{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img{
+        width: 200px;
+        height: 280px;
+    }
+}
+
+.campo-iframe{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+table{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-color: red;
+}
+
+.pontilhado{
+    border-style: dotted;
+    border-color: red;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+th{
+    color: red;
+    padding: 8px;
+}
+
+td{
+    padding: 8px;
+}
+
+.centralizado{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.links{
+    background-color: yellow;
+    text-align:left;
+    align-items: center;
+    display:block;
+    width: 500px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.referencia{
+    color: indigo;
+    padding-left: 80px;
+}
+
+
+footer{
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Comic Sans MS";
+    font-size: 15pt;
+
+    img{
+        width: 60px;
+        height: 70px;
+    }
+}

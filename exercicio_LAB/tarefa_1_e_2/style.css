@@ -29,8 +29,15 @@ th{
     border: 2px solid #ddd;
 }
 
-table:hover{
-    background-color: rgb(216, 216, 216);
+th:hover{
+    background-color: #ddd;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 }
 
