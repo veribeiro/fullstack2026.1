@@ -77,6 +77,10 @@ table{
     border-color: red;
 }
 
+th{
+    color: red;
+}
+
 .pontilhado{
     border-style: dotted;
     border-color: red;
