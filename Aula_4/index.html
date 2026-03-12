@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-container</title>
+    <style>
+        .flex-direction-row{
+            display: flex;
+            background-color: lightskyblue;
+            flex-direction: row;
+        }
+
+        .flex-direction-row div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-direction-row-reverse{
+            display: flex;
+            background-color: lightskyblue;
+            flex-direction: row-reverse;
+        }
+
+        .flex-direction-row-reverse div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-direction-column{
+            display: flex;
+            background-color: lightskyblue;
+            flex-direction: column;
+        }
+
+        .flex-direction-column div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-direction-column-reverse{
+            display: flex;
+            background-color: lightskyblue;
+            flex-direction: column-reverse;
+        }
+
+        .flex-direction-column-reverse div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-wrap-nowrap{
+            display: flex;
+            background-color: lightskyblue;
+            flex-wrap: nowrap;
+        }
+
+        .flex-wrap-nowrap div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-wrap-wrap{
+            display: flex;
+            background-color: lightskyblue;
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-wrap div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-wrap-reverse{
+            display: flex;
+            background-color: lightskyblue;
+            flex-wrap: wrap-reverse;
+        }
+
+        .flex-wrap-reverse div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+        .flex-flow{
+            display: flex;
+            background-color: lightskyblue;
+            flex-flow: column wrap;
+        }
+
+        .flex-flow div{
+            background-color: white;
+            font-size: 30px;
+            padding: 20px;
+            margin: 20px;
+            width: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>flex-direction: row</h3>
+
+    <div class="flex-direction-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>flex-direction: row-reverse</h3>
+
+    <div class="flex-direction-row-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>flex-direction: column</h3>
+
+    <div class="flex-direction-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>flex-direction: column-reverse</h3>
+
+    <div class="flex-direction-column-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3>flex-wrap: nowrap (Só não muda a linha)</h3>
+
+    <div class="flex-wrap-nowrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+    <h3>flex-wrap: wrap</h3>
+
+    <div class="flex-wrap-wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+    <h3>flex-wrap: wrap-reverse</h3>
+
+    <div class="flex-wrap-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+    </div>
+
+    <h3>flex-flow (Junta flex-direction e flex-direction)</h3>
+
+    <div class="flex-flow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+</body>
+</html>
