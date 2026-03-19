@@ -13,35 +13,6 @@
     padding: 10px;
 }
 
-.container-info{
-    display: flex;
-    align-content: space-between;
-    gap: 100px;
-    flex-wrap: wrap;
-}
-
-.horario-data{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    flex-wrap: wrap;
-    color: gray;
-}
-
-.email{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    flex-wrap: wrap;
-    color: gray;
-}
-
-.midias-sociais{
-    display: flex;
-    align-content: space-between;
-    color: gray;
-}
-
 .titulo-principal{
     color: crimson;
     font-size: 50px;
@@ -49,6 +20,12 @@
     margin-left: 40px;
     margin-bottom: 40px;
     margin-top: 70px;
+}
+
+.container-info{
+    display: flex;
+  justify-content: space-around; 
+  gap: 10px;
 }
 
 .img-principal{
