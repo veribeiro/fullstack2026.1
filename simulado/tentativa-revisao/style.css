@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(31, 28, 57);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-info{
+    display: flex;
+    color: white;
+
+    hr{
+        height: 360px;
+        background-color: rgb(57, 57, 98);
+        border: 1px solid rgb(57, 57, 98);
+    }
+}
+
+.card1{
+    width: 1000px;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.card2{
+    padding: 30px;
+    font-size: 18px;
+}
+
+.card3{
+    padding: 30px;
+    font-size: 18px;
+}
+
+.paises{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.divisoes{
+    display: flex;
+    width: 150px;
+    background-color: rgb(57, 57, 98);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-paises{
+    font-weight: bold;
+}
+
+.button{
+    display: flex;
+    background-color: aliceblue;
+    color: rgb(31, 28, 57);
+    width: 170px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.catalogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.title-catalogo{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

@@ -1,3 +1,7 @@
+body{
+    margin: none;
+}
+
 .menu{
     display: flex;
     gap: 60px;
@@ -5,6 +9,8 @@
     align-content: space-between;
     font-size: 20px;
     color: gray;
+    padding-top: 10px;
+    padding-left: 50px;
 }
 
 .botao-principal{
@@ -13,71 +19,141 @@
     padding: 10px;
 }
 
+.up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: gray;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+hr{
+    background-color: gray;
+    height: 1px;
+    width: 480px;
+}
+
+.redes-sociais{
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .titulo-principal{
     color: crimson;
-    font-size: 50px;
-    font-style: bold;
+    font-size: 40px;
+    font-weight: bold;
     margin-left: 40px;
     margin-bottom: 40px;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .container-info{
     display: flex;
-  justify-content: space-around; 
-  gap: 10px;
-}
-
-.img-principal{
-   margin-left: 40px; 
-}
-
-.info-noticia-cor{
-    background-color: crimson;
-    width: 610px;
-    height: 70px;
-    display: flex;
-    align-content: space-around;
+    justify-content: space-between; 
+    padding: 40px;
     gap: 10px;
-    padding: 5px;
-
-.info-noticia-texto1{
-    color: white;
-    font-size: 18px;
 }
 
-.info-noticia-texto2{
-    color: rgb(199, 199, 199);
-    font-size: 14px;
-}
-}
-
-.img-secundarias{
+.texto-noticia{
     display: flex;
-    flex-direction:row;
-    width: 200px;
-    height: 300px;
-    position: relative;
-    top: 30px;
-
-    .info-noticia-secundaria-texto1{
-        color: crimson;
-    }
-
-    .info-noticia-secundaria-texto2{
-            color: dimgrey;
-        }
+    background-color: crimson;
+    width: 670px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: aliceblue;
 }
 
-.video{
-    color: white;
-    margin-top: 300px;
-    background-color: rgb(68, 68, 68);
-    padding: 10px;
+.container-noticias{
+    display: flex;
 }
 
-.footer{
-    margin-top: 30px;
-    background-color: rgb(201, 193, 193);
+.noticia-maior{
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+.hr-noticias{
+    height: 0.1px;
+    width: 300px;
+    margin-top: 40px;
+    background-color: rgb(229, 229, 229);
+}
+
+.dividido-quatro{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.texto-noticia-nao-principal{
+    color: crimson;
+    max-width: 280px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.texto-normal{
     color: gray;
+}
+
+.card4{
+    margin-left: 20px;
+}
+
+.correio-play{
+    display: flex;
+    background-color: rgb(70, 70, 70);
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.titulo-play{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.parte-iframe{
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.container-footer{
+    display: flex;
+    margin-top: 50px;
+    background-color: rgb(226, 227, 228);
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+    gap: 40px;
+    color: gray;
+
+    hr{
+        width: 300px;
+        background-color: gray;
+        height: 0.3px;
+    }
+}
+
+.divisao1{
+    max-width: 275px;
+    margin-right: 40px;
+}
+
+.divisao4{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }

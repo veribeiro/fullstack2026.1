@@ -4,3 +4,28 @@ body{
     text-align: center;
     background-color: antiquewhite;
 }
+
+.forma{
+    display: block;
+}
+
+.titulo{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+input{
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#submit{
+    background-color: cadetblue;
+}
+
+#submit:hover{
+    background-color: rgb(65, 98, 99);
+    color: white;
+    cursor: pointer;
+}
