@@ -1,0 +1,175 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+}
+
+.container-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-principal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    color: hsl(210, 10%, 33%);
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.button1{
+    background-color: hsl(171, 66%, 44%);
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.button2{
+    background-color: hsl(233, 100%, 69%);
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.title-info{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container-side-computer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.info-side{
+    margin-right: 500px;
+    margin-top: 80px;
+}
+
+.title-side{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.info-side-detail{
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.img-movel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.container-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 200px;
+    padding-left: 200px;
+    margin-top: 60px;
+}
+
+.icon1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icon3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-icon{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitle-icon{
+    color: hsl(210, 10%, 33%);
+    font-family: sans-serif;
+}
+
+.container-empresas{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 130px;
+}
+
+.footer{
+    display: flex;
+    background-color: hsl(201, 11%, 66%);
+    justify-content: space-around;
+    margin-top: 150px;
+    padding: 50px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.privacity{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.install{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
