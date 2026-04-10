@@ -1,0 +1,16 @@
+#canvas1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 600px;
+    margin-bottom: 10px;
+}
+
+#canvas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    margin-left: 600px;
+}
