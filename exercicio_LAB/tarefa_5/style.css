@@ -1,16 +1,15 @@
-#canvas1{
+body{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+#canvas1{
     border: 1px solid black;
-    margin-left: 600px;
     margin-bottom: 10px;
 }
 
 #canvas2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: aqua;
-    margin-left: 600px;
 }
