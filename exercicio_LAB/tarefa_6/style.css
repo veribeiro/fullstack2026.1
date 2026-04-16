@@ -5,6 +5,7 @@ body{
 }
 
 #canvas{
-    background-color: aqua;
+    background-image: url('batalha_sans.png');
+    background-size: cover;
 }
 
