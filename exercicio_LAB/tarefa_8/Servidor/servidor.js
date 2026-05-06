@@ -21,8 +21,9 @@ resposta.redirect('Login.html')
 
 app.get('/login', function (requisicao, resposta){
 var nome = requisicao.query.info;
-var senha = requisicao.query.info;
+var senha = requisicao.query.password;
 console.log(nome);
+resposta.render('resposta_login', {nome, senha})
 })
 
 app.get('/cadastro',function (requisicao, resposta){
@@ -33,5 +34,4 @@ var civil = requisicao.query.civil;
 var senha = requisicao.query.info;
 
 resposta.render('resposta_cadastro', {nome, sobrenome, nascimento, civil, senha})
-resposta.render('resposta_login', {nome, senha})
 })

@@ -1,0 +1,79 @@
+.vt323-regular {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: "VT323", monospace;
+}
+
+.menu{
+    background-color: rgb(198, 194, 194);
+    color: #525252;
+    padding: 5px 60px;
+    padding-bottom: 20px;
+
+    .home-projects{
+        background-color: #ddd;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90px;
+        font-size: 20px;
+        color: black;
+        box-shadow: 3px 3px 5px rgb(87, 87, 87), inset 1px 2px #ffffff;
+    }
+
+    .link-projects{
+        background-color: #ddd;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90px;
+        font-size: 20px;
+        color: black;
+        box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.3), 1.8px 1.8px 1px #ffffff
+    }
+}
+
+
+
+.container-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco-projects{
+    background-color: rgb(230, 207, 248);
+    border: 1px solid rgb(60, 0, 106);
+    padding: 50px;
+    box-shadow: 2px 2px 5px grey;
+
+}
+
+.title-projects{
+    display: flex; 
+    justify-content: center; 
+    margin-top: 80px;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(210, 156, 252);
+    border: 1px solid rgb(60, 0, 106);
+    width: 38.2%;
+    margin-left: 467px;
+}
+
+table{
+    font-size: 20px;
+}
+
+th{
+    background-image: url('imgs/trechos.png');
+    color: rgb(60, 0, 106);
+}
+
+a:hover{
+    color: rgb(244, 194, 16);
+}
