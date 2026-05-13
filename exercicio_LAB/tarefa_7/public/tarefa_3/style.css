@@ -1,0 +1,115 @@
+body{
+    background-color: lightgray;
+    margin: 5px;
+}
+
+nav{
+    background-color:bisque;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 3px solid darkblue;
+    color: darkgreen;
+
+    img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.links-pagina{
+    background-color: lightskyblue;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+
+    a{
+        text-decoration: none;
+        color: darkred;
+    }
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.introducao{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: indigo;
+}
+
+.livros{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    text-align: center;
+
+    img{
+        width: 250px;
+        height: 350px;
+    }
+}
+
+.parte-iframes{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 90px;
+}
+
+.centralizado{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+table{
+    border-color: red;
+}
+
+th{
+    color: red;
+}
+
+.pontilhado{
+    border-style: dotted;
+    border-color: red;
+}
+
+.links-consulta{
+    justify-content: left;
+    text-align:left;
+    background-color: yellow;
+    width: 500px;
+    margin-top: 40px;
+}
+
+span{
+    margin: 45px;
+    color: indigo;
+}
+
+footer{
+    display: flex;
+    background-color: bisque;
+    font-family: 'Comic Sans MS';
+    font-size: 15pt;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: 20px;
+
+    img{
+        width: 80px;
+        height: 90px;
+    }
+}

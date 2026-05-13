@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="cadastrar.css">
 </head>
 <body>
-<form action="/cadastro" method="get">
-<div class="login">Login</div>
-<p>Título: <input type="text" name="title"></p>
-<p>Resumo: <input type="text" name="resum"></p>
-<p>Conteúdo: <input type="text" name="content"></p>
-<input type="submit" value="Enviar">
+    <div class="container">
+<form action="/salvar_post" method="POST">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" placeholder="Post" required>
+
+    <label for="resumo">Resumo:</label>
+    <input type="text" id="resumo" name="resumo" placeholder="Faça um pequeno resumo do post" required>
+
+    <label for="conteudo">Conteúdo:</label>
+    <input type="text" id="conteudo" name="conteudo" placeholder="Digite algum texto" required>
+
+    <button type="submit" class="btn-submit">Enviar</button>
 </form>
+
 
 </body>
 </html>

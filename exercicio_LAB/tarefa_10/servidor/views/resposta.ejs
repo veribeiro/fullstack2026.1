@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Resposta</title>
+</head>
+<body>
+  <h1><%= mensagem %></h1>
+
+  <% if (mensagem.includes("sucesso") || mensagem.includes("Bem-vindo")) { %>
+    <a href="/listar">Voltar</a>
+  <% } else { %>
+    <a href="/login">Voltar</a>
+  <% } %>
+</body>
+</html>

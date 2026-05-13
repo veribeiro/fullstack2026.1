@@ -11,7 +11,12 @@ var app = express () ;
 
 // método use() utilizado para definir em qual
 // pasta estará o conteúdo estático
-app. use (express. static ('./public' ));
+app. use (express. static ('./public/tarefa_1_e_2' ));
+
+app.get('/', (req, res) => {
+    // __dirname garante que o Node encontre o caminho absoluto da pasta
+    res.sendFile(__dirname + '/public/tarefa_1_e_2/projects.html');
+});
 
 // cria o servidor
 var server = http.createServer(app);

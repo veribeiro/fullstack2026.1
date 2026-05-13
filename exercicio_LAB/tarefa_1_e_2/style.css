@@ -4,8 +4,17 @@
     font-style: normal;
 }
 
+:root {
+    --win-gray: #c0c0c0;
+    --win-blue: #000080;
+    --win-light: #ffffff;
+    --win-shadow: #808080;
+}
+
 body{
     font-family: "VT323", monospace;
+    color: #000;
+    background-color: #008080; /* Cor clássica do fundo do Windows 95/98 */
 }
 
 .menu{
@@ -37,30 +46,102 @@ body{
     }
 }
 
-.table-container{
-table{
-    border-collapse: collapse;
+.introducao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-th{
-    width: 680px;
-    border: 2px solid #ddd;
+.background-antigo {
+    background-image: url('imgs/tela-windows.jpg');
+    background-size: cover; /* Garante que a imagem preencha toda a div */
+    background-position: center;
+    width: 500px;
+    height: 313px;
+
+    /* O segredo para centralizar o conteúdo está aqui: */
+    display: flex;
+    flex-direction: column;   /* Empilha o <p> e a <ul> */
+    justify-content: center;  /* Centraliza na vertical */
+    align-items: center;      /* Centraliza na horizontal */
+    
+    color: white;             /* Opcional: melhora a leitura sobre imagens escuras */
 }
 
-table:hover{
-    background-color: rgb(216, 216, 216);
+/* Ajuste opcional para a lista não ficar com muito espaço à esquerda */
+.background-antigo ul {
+    list-style-position: inside; /* Traz as "bolinhas" para o centro também */
+    padding: 5px;
+    margin: 0;
+    text-align: left; /* Mantém o texto alinhado à esquerda, mas o bloco centralizado */
+    color: black;
 }
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-th{
-    width: 680px;
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.resumo-livro{
-    font-size: 14px;
+.livros-tipo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+    .title-video{
+        flex-direction: column;
+    }
+}
+
+.table-container table {
+    background-color: var(--win-gray);
+    border: 2px solid;
+    border-color: var(--win-light) var(--win-shadow) var(--win-shadow) var(--win-light);
+    width: 800px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+table::before {
+    content: "📖 Resumo do Livro";
+    display: block;
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    font-size: 12px;
+    text-align: left;
+}
+
+th {
+    border: 1px solid var(--win-shadow);
+    padding: 15px;
+    vertical-align: top;
     font-weight: normal;
-    text-align:justify;
-    margin: 15px;
+}
+
+.resumo-livro {
+    text-align: justify;
+    line-height: 1.4;
+    background: white; /* Interior branco para parecer um documento */
+    padding: 15px;
+    border: 1px inset var(--win-shadow);
+}
+
+ul {
+    background: white;
+    border: 1px inset var(--win-shadow);
+    display: inline-block;
+    padding: 20px 40px;
+    text-align: left;
 }
 
 .footer{
@@ -79,8 +160,31 @@ a:hover{
 }
 
 #titulo-principal{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;         /* IMPORTANTE: Remove o margin: auto que quebra o alinhamento */
+    padding: 0;        /* Deixe o padding para o container */
+    font-size: 32px;   /* Ajuste o tamanho como preferir */
+    background: none;  /* Remove o fundo individual */
+    border: none;      /* Remove a borda individual */
 }
+
+.titulo-principal-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conjunto (texto + imagem) na tela */
+    align-items: center;     /* Alinha verticalmente o texto e a imagem */
+    gap: 20px;
+    
+    /* Estética Anos 2000 que estava no H1, agora no Container */
+    background-color: var(--win-gray);
+    border: 2px solid;
+    border-color: var(--win-light) var(--win-shadow) var(--win-shadow) var(--win-light);
+    max-width: 500px;
+    margin: 20px auto 30px auto; /* Centraliza a caixa inteira na página */
+}
+
+.icon{
+    display: block;
+}
+
 
 .links{
     text-align: left;

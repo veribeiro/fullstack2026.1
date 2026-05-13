@@ -37,7 +37,10 @@ body{
     }
 }
 
-
+.wrapper {
+    max-width: 780px; /* Defina a largura que você deseja aqui */
+    margin: 80px auto; /* Centraliza tudo na tela */
+}
 
 .container-projects{
     display: flex;
@@ -48,25 +51,35 @@ body{
 .bloco-projects{
     background-color: rgb(230, 207, 248);
     border: 1px solid rgb(60, 0, 106);
+    border-top: none; /* Opcional: para não dobrar a borda entre título e bloco */
     padding: 50px;
     box-shadow: 2px 2px 5px grey;
-
+    width: 100%;
+    box-sizing: border-box; /* Importante para o padding não "esticar" a div */
 }
 
 .title-projects{
-    display: flex; 
-    justify-content: center; 
-    margin-top: 80px;
-    text-align: center;
     font-size: 40px;
     background-color: rgb(210, 156, 252);
     border: 1px solid rgb(60, 0, 106);
-    width: 38.2%;
-    margin-left: 467px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; /* Remove as margens de 465px */
+    width: 100%; /* Garante que ocupa o wrapper todo */
 }
 
-table{
+table {
     font-size: 20px;
+  border-collapse: collapse; /* Une as bordas das células */
+  width: 100%;
+}
+
+table, th, td{
+    border: 2px solid rgb(60, 0, 106);
+}
+
+th, td{
+    padding: 4px;
 }
 
 th{

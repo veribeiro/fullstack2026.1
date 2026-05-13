@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciar Carros</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #2980b9;
+}
+
+form {
+  margin: 10px 0;
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cadastrar{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.remover-submit:hover{
+  background-color: #e74c3c;
+}
+
+div.carro {
+  border: 2px solid #444;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+div.carro h3 {
+  color: #e74c3c; /* vermelho esportivo */
+  font-family: 'Impact', sans-serif;
+  letter-spacing: 1px;
+}
+
+div.carro p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+
+  </style>
+</head>
+<body>
+  <h1>Gerenciar Carros</h1>
+
+  <h2>Cadastrar Novo Carro</h2>
+    <div class="cadastrar">
+  <form action="/cadastrar_carro" method="post">
+    <input type="text" name="modelo" placeholder="Modelo" required>
+    <input type="text" name="marca" placeholder="Marca" required>
+    <input type="number" name="ano" placeholder="Ano" required>
+    <input type="number" name="quantidade" placeholder="Quantidade" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+  </div>
+
+  <h2>Carros Existentes</h2>
+  <% lista_carros.forEach(function(carro) { %>
+    <div style="border:1px solid #999; margin:10px; padding:10px; border-radius:8px;">
+      <h3><%= carro.modelo %> - <%= carro.marca %></h3>
+      <p>Quantidade: <%= carro.quantidade %></p>
+
+      <form action="/remover_carro" method="post">
+        <input type="hidden" name="id" value="<%= carro._id %>">
+        <button type="submit" class="remover-submit">Remover</button>
+      </form>
+
+      <form action="/atualizar_carro" method="post">
+        <input type="hidden" name="id" value="<%= carro._id %>">
+        <input type="text" name="modelo" value="<%= carro.modelo %>">
+        <input type="text" name="marca" value="<%= carro.marca %>">
+        <input type="number" name="ano" value="<%= carro.ano %>">
+        <input type="number" name="quantidade" value="<%= carro.quantidade %>">
+        <button type="submit">Atualizar</button>
+      </form>
+
+      <% if (carro.quantidade > 0) { %>
+  <form action="/vender_carro" method="post">
+    <input type="hidden" name="id" value="<%= carro._id %>">
+    <button type="submit">Vender</button>
+  </form>
+<% } else { %>
+  <button disabled style="background-color:gray;">Esgotado</button>
+<% } %>
+
+    </div>
+  <% }); %>
+  <a href="/login">Sair</a>
+</body>
+</html>

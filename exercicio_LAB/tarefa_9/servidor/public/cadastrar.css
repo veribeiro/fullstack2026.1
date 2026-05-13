@@ -1,0 +1,44 @@
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 40px auto;
+    }
+
+
+form {
+    margin-bottom: 15px; /* Espaçamento entre campos */
+}
+
+form label {
+    display: block; /* Label acima do input */
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+form input {
+    width: 50%; /* Input ocupa a largura toda */
+    padding: 8px;
+    box-sizing: border-box; /* Garante padding correto */
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.btn-submit{
+    background-color: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  
+  /* Adicione estas duas linhas abaixo */
+  display: block; 
+  margin: 20px auto 0 auto; /* 20px de espaço acima e centralizado */
+}
