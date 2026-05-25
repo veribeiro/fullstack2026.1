@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input {
+            width: 50%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button[type="submit"] {
+            margin-top: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #ff0808;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c20707;
+        }
+    </style>
+</head>
+<body>
+    <h1>Produtos já cadastrados:</h1>
+    <div class="container">
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Data de Validade</th>
+        </tr>
+        <% produtos.forEach(function(produto) { %>
+        <tr>
+            <td><%= produto._id %></td>
+            <td><%= produto.nome_produto %></td>
+            <td><%= produto.marca_produto %></td>
+            <td><%= produto.preco_produto %></td>
+            <td><%= produto.quantidade %></td>
+            <td><%= produto.data_validade ? new Date(produto.data_validade).toLocaleDateString() : '' %></td>
+        </tr>
+        <% }); %>
+    </table>
+    </div>
+    <h1>Selecione o produto que deseja remover:</h1>
+    <form action="/removerproduto" method="POST">
+        <label for="_id">ID do Produto:</label>
+        <input type="text" id="_id" name="_id" required><br><br>
+        <button type="submit">Remover</button>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Informações do Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input {
+            width: 50%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registros de produtos já cadastrados</h1>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Produto</th>
+                    <th>Marca</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Data de Validade</th>
+                </tr>
+                <% produtos.forEach(function(produto) { %>
+                <tr>
+                    <td><%= produto._id %></td>
+                    <td><%= produto.nome_produto %></td>
+                    <td><%= produto.marca_produto %></td>
+                    <td><%= produto.preco_produto %></td>
+                    <td><%= produto.quantidade %></td>
+                    <td><%= produto.data_validade ? new Date(produto.data_validade).toLocaleDateString() : '' %></td>
+                </tr>
+                <% }); %>
+            </table>
+        </div>
+        <h1>Alterar Informações do Produto</h1>
+        <form action="/atualizarproduto" method="post">
+                <label for="nome_produto">Nome do Produto:</label>
+                <input type="text" id="nome_produto" name="nome_produto" value="<%= produtos.nome_produto %>">
+            </div>
+            <label for="marca_produto">Marca:</label>
+            <input type="text" id="marca_produto" name="marca_produto" value="<%= produtos.marca_produto %>">
+        </div>
+                <label for="preco_produto">Preço:</label>
+                <input type="number" id="preco_produto" name="preco_produto" value="<%= produtos.preco_produto %>" step="0.01">
+            </div>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" value="<%= produtos.quantidade %>">
+            </div>
+                <label for="data_validade">Data de Validade:</label>
+                <input type="date" id="data_validade" name="data_validade" value="<%= produtos.data_validade ? new Date(produtos.data_validade).toISOString().split('T')[0] : '' %>">
+            </div>
+            <button type="submit">Atualizar Produto</button>
+        </form>
+    </div>
+</body>
+</html>

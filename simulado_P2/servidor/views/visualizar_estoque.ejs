@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Estoque de Produtos</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estoque de Produtos</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Data de Validade</th>
+        </tr>
+        <% produtos.forEach(function(produto) { %>
+        <tr>
+            <td><%= produto._id %></td>
+            <td><%= produto.nome_produto %></td>
+            <td><%= produto.marca_produto %></td>
+            <td><%= produto.preco_produto %></td>
+            <td><%= produto.quantidade %></td>
+            <td><%= produto.data_validade ? new Date(produto.data_validade).toISOString().split('T')[0] : 'N/A' %></td>
+        </tr>
+        <% }); %>
+    </table>
+</body>
+</html>

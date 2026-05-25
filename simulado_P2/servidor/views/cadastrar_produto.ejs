@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            max-width: 800px;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #1cff6b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #11aa47;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastrar Produto</h1>
+    <form action="/cadastrar_produto" method="POST">
+        <label for="nome_produto">Nome/Tipo:</label>
+        <input type="text" id="nome_produto" name="nome_produto" required><br><br>
+
+        <label for="marca_produto">Marca:</label>
+        <input type="text" id="marca_produto" name="marca_produto" required><br><br>
+
+        <label for="preco_produto">Preço:</label>
+        <input type="number" id="preco_produto" name="preco_produto" step="0.01" required><br><br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" required><br><br>
+
+        <label for="data_validade">Data de Validade: (opcional)</label>
+        <input type="date" id="data_validade" name="data_validade"><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

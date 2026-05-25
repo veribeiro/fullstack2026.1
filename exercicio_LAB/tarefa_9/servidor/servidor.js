@@ -6,7 +6,7 @@ var bodyParser = require("body-parser")
 var mongodb = require("mongodb");
 
 const { MongoClient } = require("mongodb");
-const uri = "mongodb://veribeiro0:vtH%5E%26%21161114@ac-nopcm4b-shard-00-00.yqjfy2q.mongodb.net:27017,ac-nopcm4b-shard-00-01.yqjfy2q.mongodb.net:27017,ac-nopcm4b-shard-00-02.yqjfy2q.mongodb.net:27017/?ssl=true&replicaSet=atlas-701i41-shard-0&authSource=admin&appName=Cluster0";
+const uri = "mongodb://veribeiro0:1sTaAA0dD7eZpVu6@ac-nopcm4b-shard-00-00.yqjfy2q.mongodb.net:27017,ac-nopcm4b-shard-00-01.yqjfy2q.mongodb.net:27017,ac-nopcm4b-shard-00-02.yqjfy2q.mongodb.net:27017/?ssl=true&replicaSet=atlas-701i41-shard-0&authSource=admin&appName=Cluster0";
 const client = new MongoClient(uri)
 
 

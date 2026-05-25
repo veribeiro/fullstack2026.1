@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Login Pet Shop</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="img-logo">
+        <img width="150" height="150" src="logo_petshop.jpg" alt="Logo do Pet Shop">
+    </div>
+    <div class ="container">
+        <h1>Fazer login</h1>
+        <form action="/login" method="POST">
+            <label for ="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for ="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type = "submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        <p>Esqueceu a senha? <a href="recuperar-senha.html">Recuperar senha</a></p>
+    </div>
+</body>
+</html>

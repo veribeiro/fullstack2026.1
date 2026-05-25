@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><%= mensagem %></p>
+    <% if (mensagem.includes("Login realizado com sucesso!")) { %>
+    <a href="/menu">Ir para o menu</a>
+    <% } else if (mensagem.includes("Produto atualizado com sucesso!")) { %>
+    <a href="/menu">Voltar</a>
+    <% } else if (mensagem.includes("Produto removido com sucesso!")) { %>
+    <a href="/menu">Voltar</a>
+    <% } else if (mensagem.includes("Produto não encontrado!")) { %>
+    <a href="/menu">Voltar</a>
+    <% } else if (mensagem.includes("Erro ao cadastrar produto!")) { %>
+    <a href="/menu">Voltar</a>
+    <% } else if (mensagem.includes("Erro ao listar produtos!")) { %>
+    <a href="/menu">Voltar</a>
+    <% } else if (mensagem.includes("Erro ao atualizar produto!")) { %>
+    <a href="/menu">Voltar</a>
+    <% } else { %>
+    <a href="/">Voltar</a>
+  <% } %>
+</body>
+</html>

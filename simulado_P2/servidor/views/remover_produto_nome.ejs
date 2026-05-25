@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Produto por Nome</title>
+</head>
+<body>
+    <h1>Produtos já cadastrados:</h1>
+    <div class="container">
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Data de Validade</th>
+        </tr>
+        <% produtos.forEach(function(produto) { %>
+        <tr>
+            <td><%= produto._id %></td>
+            <td><%= produto.nome_produto %></td>
+            <td><%= produto.marca_produto %></td>
+            <td><%= produto.preco_produto %></td>
+            <td><%= produto.quantidade %></td>
+            <td><%= produto.data_validade ? new Date(produto.data_validade).toLocaleDateString() : '' %></td>
+        </tr>
+        <% }); %>
+    </table>
+    </div>
+    <h1>Selecione o produto que deseja remover:</h1>
+    <form action="/removerprodutonome" method="POST">
+        <label for="nome_produto">Nome do Produto:</label>
+        <input type="text" id="nome_produto" name="nome_produto" required><br><br>
+        <button type="submit">Remover</button>
+</body>
+</html>
